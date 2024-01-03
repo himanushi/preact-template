@@ -1,4 +1,5 @@
 import { useEffect, useState } from "preact/hooks";
+import styles from "~/Home.module.css";
 
 export const Home = () => {
   const [title, setTitle] = useState("");
@@ -9,7 +10,7 @@ export const Home = () => {
 
   return (
     <div>
-      <h1>{title}</h1>
+      <h1 className={styles.homeTitle}>{title}</h1>
     </div>
   );
 };
