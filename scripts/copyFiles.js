@@ -4,6 +4,7 @@ import fs from "fs";
 import path from "path";
 import clipboardy from "clipboardy";
 
+// コピペから除外するファイル又はディレクトリ
 const excludeFiles = [
   "node_modules",
   ".git",
@@ -18,6 +19,10 @@ const excludeFiles = [
   "favicon.ico",
   ".gitignore",
   "tsconfig.json",
+  "scripts",
+  "vite.config.ts",
+  "vite-env.d.ts",
+  "tsconfig.node.json",
 ];
 
 function directoryContents(dir, depth = 0) {
@@ -74,3 +79,4 @@ const contents = directoryContents(process.cwd());
 const combinedOutput = `${description}\n\n${treeOutput}\n\n${contents}`;
 
 clipboardy.writeSync(combinedOutput);
+console.log("コピーしました。");
