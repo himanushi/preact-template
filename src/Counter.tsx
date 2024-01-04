@@ -11,18 +11,11 @@ export const Counter = () => {
     <div>
       <a href="/">Home Link</a>
       <p>Global Count: {globalCount.value}</p>
-      <button
-        type="button"
-        onClick={() => {
-          globalCount.value++;
-        }}
-      >
-        +1
-      </button>
       <p>Local Count: {localCount.value}</p>
       <button
         type="button"
         onClick={() => {
+          globalCount.value++;
           localCount.value++;
         }}
       >

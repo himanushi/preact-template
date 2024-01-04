@@ -18,11 +18,21 @@ export default defineConfig({
           var: "preact",
           path: "https://cdnjs.cloudflare.com/ajax/libs/preact/10.19.3/preact.umd.min.js",
         },
-        // {
-        //   name: "@preact/signals",
-        //   var: "preactSignals",
-        //   path: "https://cdn.jsdelivr.net/npm/@preact/signals@1.2.2/dist/signals.module.min.js",
-        // },
+        {
+          name: "preact/hooks",
+          var: "preactHooks",
+          path: "https://cdnjs.cloudflare.com/ajax/libs/preact/10.19.3/hooks.umd.min.js",
+        },
+        {
+          name: "@preact/signals-core",
+          var: "preactSignalsCore",
+          path: "https://unpkg.com/@preact/signals-core@1.3.1/dist/signals-core.min.js",
+        },
+        {
+          name: "@preact/signals",
+          var: "preactSignals",
+          path: "https://unpkg.com/@preact/signals@1.2.2/dist/signals.min.js",
+        },
         {
           name: "preact-router",
           var: "preactRouter",
