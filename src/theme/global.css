@@ -1,16 +1,17 @@
 a {
-  color: #000;
+  color: var(--blue-5);
   text-decoration: underline;
   &:hover {
-    color: #000;
     text-decoration: none;
+  }
+  &:visited {
+    color: var(--purple-5);
   }
 }
 
-button,
-[type="button"] {
+button {
   border: none;
-  background-color: blue;
+  background-color: var(--red-5);
   cursor: pointer;
   &:disabled {
     cursor: not-allowed;
