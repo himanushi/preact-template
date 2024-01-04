@@ -1,11 +1,13 @@
 import { render } from "preact";
-import Router, { Route } from "preact-router";
+import { Route, Router } from "preact-router";
+import { Counter } from "~/Counter";
 import { Home } from "~/Home";
 
 const App = () => {
   return (
     <Router>
       <Route path="/" component={Home} />
+      <Route path="/counter" component={Counter} />
     </Router>
   );
 };

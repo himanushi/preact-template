@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.4.1",
+    "@preact/signals": "^1.2.2",
     "@types/node": "^20.10.6",
     "clipboardy": "^4.0.0",
     "http-server": "^14.1.1",

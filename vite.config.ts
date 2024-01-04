@@ -18,6 +18,16 @@ export default defineConfig({
           var: "preact",
           path: "https://cdnjs.cloudflare.com/ajax/libs/preact/10.19.3/preact.umd.min.js",
         },
+        // {
+        //   name: "@preact/signals",
+        //   var: "preactSignals",
+        //   path: "https://cdn.jsdelivr.net/npm/@preact/signals@1.2.2/dist/signals.module.min.js",
+        // },
+        {
+          name: "preact-router",
+          var: "preactRouter",
+          path: "https://unpkg.com/preact-router@4.1.1/dist/preact-router.umd.js",
+        },
         {
           name: "marked",
           var: "marked",
@@ -26,9 +36,4 @@ export default defineConfig({
       ],
     }),
   ],
-  build: {
-    rollupOptions: {
-      external: ["preact", "marked"],
-    },
-  },
 });
