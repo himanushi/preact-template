@@ -16,12 +16,12 @@ export default defineConfig({
         {
           name: "preact",
           var: "preact",
-          path: "https://cdnjs.cloudflare.com/ajax/libs/preact/10.19.3/preact.umd.min.js",
+          path: "https://unpkg.com/preact@10.19.3/dist/preact.umd.js",
         },
         {
           name: "preact/hooks",
           var: "preactHooks",
-          path: "https://cdnjs.cloudflare.com/ajax/libs/preact/10.19.3/hooks.umd.min.js",
+          path: "https://unpkg.com/preact@10.19.3/hooks/dist/hooks.umd.js",
         },
         {
           name: "@preact/signals-core",
@@ -37,11 +37,6 @@ export default defineConfig({
           name: "preact-router",
           var: "preactRouter",
           path: "https://unpkg.com/preact-router@4.1.1/dist/preact-router.umd.js",
-        },
-        {
-          name: "marked",
-          var: "marked",
-          path: "https://cdn.jsdelivr.net/npm/marked@11.1.1/lib/marked.umd.min.js",
         },
       ],
     }),
