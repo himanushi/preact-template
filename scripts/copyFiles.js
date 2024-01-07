@@ -23,6 +23,7 @@ const excludeFiles = [
   "vite.config.ts",
   "vite-env.d.ts",
   "tsconfig.node.json",
+  "open-props.min.css",
 ];
 
 function directoryContents(dir, depth = 0) {
@@ -79,4 +80,4 @@ const contents = directoryContents(process.cwd());
 const combinedOutput = `${description}\n\n${treeOutput}\n\n${contents}`;
 
 clipboardy.writeSync(combinedOutput);
-console.log("コピーしました。");
+console.log("コピーしました");
