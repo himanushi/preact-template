@@ -11,18 +11,18 @@
     "update": "ncu -u"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.4.1",
+    "@biomejs/biome": "^1.5.2",
     "@preact/signals": "^1.2.2",
-    "@types/node": "^20.10.6",
+    "@types/node": "^20.11.5",
     "clipboardy": "^4.0.0",
     "http-server": "^14.1.1",
     "npm-check-updates": "^16.14.12",
     "preact": "^10.19.3",
     "preact-router": "^4.1.2",
-    "prettier": "^3.1.1",
+    "prettier": "^3.2.4",
     "typescript": "^5.3.3",
-    "vite": "^5.0.10",
+    "vite": "^5.0.12",
     "vite-plugin-external-cdn": "^1.0.1",
-    "vite-tsconfig-paths": "^4.2.3"
+    "vite-tsconfig-paths": "^4.3.1"
   }
 }
